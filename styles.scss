@@ -1,0 +1,281 @@
+/* MES VARIABLES */ 
+$violet : #9356DC;
+$rose : #FF79DA;
+$vert: #99E2D0;
+$noir: black;
+$blanc: white;
+$grisclair:  #f5f8f7; 
+$policeshrikhand: 'Shrikhand', cursive;
+$policeroboto: 'Roboto', sans-serif;
+$paddingTopSection: 40px;
+$paddingBottomSection: 70px;
+$ombre: 1px 18px 15px -9px rgba(0,0,0,0.56);
+$paddingLeftDuTexteSousPhotoRestaurant : 20px;
+
+
+ 
+/* POLICES */
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+ *{font-family: $policeshrikhand}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+ *{font-family: $policeroboto;}
+
+ 
+
+ @keyframes myrtha {
+from {opacity: 0;}
+to {opacity: 1;}
+     
+ }
+
+
+ @keyframes mathieu {
+     0% {font-size:20px;color:red}
+     30% {font-size:10px;color:green}
+     100% {font-size:50px; color:blue}
+
+ }
+
+    
+    /* HEADER */
+    #headerconteneurlogo{
+        display: flex;
+        justify-content: center;
+        
+        img {
+            width: 50%;           
+        }
+    }
+    
+  
+    /* SECTION RECHERCHE */
+
+    #recherche{
+        background-color: $grisclair;
+        padding-bottom: $paddingBottomSection;
+
+        #recherche__lignerecherche{
+            display: flex;
+            background-color: #f2f2f2;
+            height: auto;
+            justify-content: center;
+
+            #conteneuriconmap{
+                display: flex;
+                margin-right: 15px;
+                align-items: center;
+
+                    #iconmap{
+                        font-size: 20px;
+                        width: 100%; 
+                    }
+            }
+    
+            #conteneurchampsrecherche{
+                display: flex;
+                justify-content: center; 
+           
+                #champsrecherche{
+                    height: 50px;
+                    border: none;
+                    background-color:#f2f2f2;
+                    font-size : 18px;            
+                }
+            
+            }
+            
+        } 
+           
+            
+        h1{
+            font-size: 40px;
+            text-align: center;
+            font-family: $policeroboto;
+            font-weight: bold;
+            animation: 5s 3s 1 both mathieu;
+
+        }
+    
+        p{
+            font-size: 25px;
+            text-align: center;
+        }
+    
+        #recherche__conteneurboutonexplorer{
+            display: flex;
+            justify-content: center;
+
+                #boutonexplorer{
+                    
+                    color: white;
+                    border-radius: 40px;
+                    font-size: 18px;
+                    padding: 20px;
+                    background: rgb(255,121,218);
+                    background: linear-gradient(180deg, rgba(255,121,218,1) 20%, rgba(147,86,220,1) 100%);
+                    border: none;
+                    box-shadow: $ombre;
+                }
+        }
+        
+    }
+    
+
+    /* SECTION FONCTIONNEMENT */
+
+    #fonctionnement{
+        padding-top: $paddingTopSection;
+        padding-bottom: $paddingBottomSection;
+
+
+        .ensemble__fonctionnement__boutons{
+            display: flex;
+            align-items: center;
+        }    
+        .fonctionnement__boutons{
+            display: flex;        
+            margin-top: 30px;
+            border-radius: 20px;
+            padding: 25px;
+            width: 90%;
+            font-size: 15px;
+            background-color: $grisclair;
+            box-shadow: $ombre;   
+             border: none;                                    
+                    
+
+           
+
+                .num{
+                    display: flex;
+                    border-radius: 50%;
+                    color:$blanc ;
+                    background-color: $violet;
+                    padding: 10px;
+                    align-items: center;
+                    height: 10px;
+                    
+                }
+
+                .fas{
+                    font-size: 20px;
+                }
+
+                .bouton{
+                                                    
+                    
+                }
+
+
+            }
+
+    
+    }
+
+    /* SECTION RESTAURANT */
+
+    #restaurant{
+        
+        background-color: $grisclair;
+        padding-top: $paddingTopSection;
+        padding-bottom: $paddingBottomSection;
+
+        .ensemble__restaurant__carte{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+       .restaurant__carte{
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        background-color: $blanc;
+        margin-top: 30px;
+        width: 90%;
+        box-shadow: $ombre;
+
+            a{
+                text-decoration: none;
+                color: $noir;
+
+      
+                .restaurant__carte__photo{
+                    width: 100%;
+                    height: 300px;
+                    border-radius: 20px 20px 0 0;
+                    
+                }
+
+                h3{
+                    margin-bottom: 0;
+                    padding-left: $paddingLeftDuTexteSousPhotoRestaurant;                
+                }
+
+                .paragrapheetlogo{
+                    display: flex;
+
+                        p{
+                        margin-top: 0;
+                        width: 90%;
+                        padding-left: $paddingLeftDuTexteSousPhotoRestaurant;            
+                        }
+
+                    .conteneurcoeur{
+                        display: flex;
+                        width: 10%;
+                        justify-items: center;
+                        
+
+                        .far{
+                            width: 100%;
+                            font-size: 20px;
+                        }
+                    }
+            
+                }
+
+            }
+
+            
+        }
+
+    }
+
+    
+    
+
+    /* FOOTER */
+
+    footer{
+        background-color: $noir;
+        color: $blanc;
+
+        .footer__bloc{
+            padding: 30px;
+            
+                h4{
+                font-family: $policeshrikhand;
+                font-weight: bold;
+                margin-block-start: 0em;
+            }
+
+            .fas{
+                float: left;
+            }
+
+            .texte{
+                margin-left: 30px;
+            }
+
+            a{
+                text-decoration: none;
+                color: $blanc;
+            }
+
+        }
+
+       
+    }

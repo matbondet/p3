@@ -1,0 +1,313 @@
+/* MES VARIABLES */
+/* POLICES */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+* {
+  font-family: "Shrikhand", cursive;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+@-webkit-keyframes myrtha {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes myrtha {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes mathieu {
+  0% {
+    font-size: 20px;
+    color: red;
+  }
+  30% {
+    font-size: 10px;
+    color: green;
+  }
+  100% {
+    font-size: 50px;
+    color: blue;
+  }
+}
+
+@keyframes mathieu {
+  0% {
+    font-size: 20px;
+    color: red;
+  }
+  30% {
+    font-size: 10px;
+    color: green;
+  }
+  100% {
+    font-size: 50px;
+    color: blue;
+  }
+}
+
+/* HEADER */
+#headerconteneurlogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#headerconteneurlogo img {
+  width: 50%;
+}
+
+/* SECTION RECHERCHE */
+#recherche {
+  background-color: #f5f8f7;
+  padding-bottom: 70px;
+}
+
+#recherche #recherche__lignerecherche {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f2f2f2;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#recherche #recherche__lignerecherche #conteneuriconmap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#recherche #recherche__lignerecherche #conteneuriconmap #iconmap {
+  font-size: 20px;
+  width: 100%;
+}
+
+#recherche #recherche__lignerecherche #conteneurchampsrecherche {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#recherche #recherche__lignerecherche #conteneurchampsrecherche #champsrecherche {
+  height: 50px;
+  border: none;
+  background-color: #f2f2f2;
+  font-size: 18px;
+}
+
+#recherche h1 {
+  font-size: 40px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  -webkit-animation: 5s 3s 1 both mathieu;
+          animation: 5s 3s 1 both mathieu;
+}
+
+#recherche p {
+  font-size: 25px;
+  text-align: center;
+}
+
+#recherche #recherche__conteneurboutonexplorer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#recherche #recherche__conteneurboutonexplorer #boutonexplorer {
+  color: white;
+  border-radius: 40px;
+  font-size: 18px;
+  padding: 20px;
+  background: #ff79da;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #ff79da), to(#9356dc));
+  background: linear-gradient(180deg, #ff79da 20%, #9356dc 100%);
+  border: none;
+  -webkit-box-shadow: 1px 18px 15px -9px rgba(0, 0, 0, 0.56);
+          box-shadow: 1px 18px 15px -9px rgba(0, 0, 0, 0.56);
+}
+
+/* SECTION FONCTIONNEMENT */
+#fonctionnement {
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+#fonctionnement .ensemble__fonctionnement__boutons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#fonctionnement .fonctionnement__boutons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  border-radius: 20px;
+  padding: 25px;
+  width: 90%;
+  font-size: 15px;
+  background-color: #f5f8f7;
+  -webkit-box-shadow: 1px 18px 15px -9px rgba(0, 0, 0, 0.56);
+          box-shadow: 1px 18px 15px -9px rgba(0, 0, 0, 0.56);
+  border: none;
+}
+
+#fonctionnement .fonctionnement__boutons .num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  color: white;
+  background-color: #9356DC;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10px;
+}
+
+#fonctionnement .fonctionnement__boutons .fas {
+  font-size: 20px;
+}
+
+/* SECTION RESTAURANT */
+#restaurant {
+  background-color: #f5f8f7;
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+#restaurant .ensemble__restaurant__carte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#restaurant .restaurant__carte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 20px;
+  background-color: white;
+  margin-top: 30px;
+  width: 90%;
+  -webkit-box-shadow: 1px 18px 15px -9px rgba(0, 0, 0, 0.56);
+          box-shadow: 1px 18px 15px -9px rgba(0, 0, 0, 0.56);
+}
+
+#restaurant .restaurant__carte a {
+  text-decoration: none;
+  color: black;
+}
+
+#restaurant .restaurant__carte a .restaurant__carte__photo {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px 20px 0 0;
+}
+
+#restaurant .restaurant__carte a h3 {
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+#restaurant .restaurant__carte a .paragrapheetlogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#restaurant .restaurant__carte a .paragrapheetlogo p {
+  margin-top: 0;
+  width: 90%;
+  padding-left: 20px;
+}
+
+#restaurant .restaurant__carte a .paragrapheetlogo .conteneurcoeur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10%;
+  justify-items: center;
+}
+
+#restaurant .restaurant__carte a .paragrapheetlogo .conteneurcoeur .far {
+  width: 100%;
+  font-size: 20px;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer .footer__bloc {
+  padding: 30px;
+}
+
+footer .footer__bloc h4 {
+  font-family: "Shrikhand", cursive;
+  font-weight: bold;
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+}
+
+footer .footer__bloc .fas {
+  float: left;
+}
+
+footer .footer__bloc .texte {
+  margin-left: 30px;
+}
+
+footer .footer__bloc a {
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */
